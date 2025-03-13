@@ -8,7 +8,10 @@
 .env
 .env.backup
 .env.production
+<<<<<<< HEAD
 .phpunit.result.cache
+=======
+>>>>>>> e805ba4 (update admin)
 Homestead.json
 Homestead.yaml
 auth.json

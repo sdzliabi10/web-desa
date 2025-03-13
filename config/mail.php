@@ -28,15 +28,23 @@ return [
     | sending an e-mail. You will specify which one you are using for your
     | mailers below. You are free to add additional mailers as required.
     |
+<<<<<<< HEAD
     | Supported: "smtp", "sendmail", "mailgun", "ses", "ses-v2",
     |            "postmark", "log", "array", "failover", "roundrobin"
+=======
+    | Supported: "smtp", "sendmail", "mailgun", "ses",
+    |            "postmark", "log", "array", "failover"
+>>>>>>> e805ba4 (update admin)
     |
     */
 
     'mailers' => [
         'smtp' => [
             'transport' => 'smtp',
+<<<<<<< HEAD
             'url' => env('MAIL_URL'),
+=======
+>>>>>>> e805ba4 (update admin)
             'host' => env('MAIL_HOST', 'smtp.mailgun.org'),
             'port' => env('MAIL_PORT', 587),
             'encryption' => env('MAIL_ENCRYPTION', 'tls'),
@@ -50,16 +58,26 @@ return [
             'transport' => 'ses',
         ],
 
+<<<<<<< HEAD
         'postmark' => [
             'transport' => 'postmark',
             // 'message_stream_id' => null,
+=======
+        'mailgun' => [
+            'transport' => 'mailgun',
+>>>>>>> e805ba4 (update admin)
             // 'client' => [
             //     'timeout' => 5,
             // ],
         ],
 
+<<<<<<< HEAD
         'mailgun' => [
             'transport' => 'mailgun',
+=======
+        'postmark' => [
+            'transport' => 'postmark',
+>>>>>>> e805ba4 (update admin)
             // 'client' => [
             //     'timeout' => 5,
             // ],
@@ -86,6 +104,7 @@ return [
                 'log',
             ],
         ],
+<<<<<<< HEAD
 
         'roundrobin' => [
             'transport' => 'roundrobin',
@@ -94,6 +113,8 @@ return [
                 'postmark',
             ],
         ],
+=======
+>>>>>>> e805ba4 (update admin)
     ],
 
     /*

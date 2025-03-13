@@ -1,14 +1,24 @@
 {
     "name": "laravel/laravel",
     "type": "project",
+<<<<<<< HEAD
     "description": "The skeleton application for the Laravel framework.",
     "keywords": ["laravel", "framework"],
+=======
+    "description": "The Laravel Framework.",
+    "keywords": ["framework", "laravel"],
+>>>>>>> e805ba4 (update admin)
     "license": "MIT",
     "require": {
         "php": "^8.1",
         "guzzlehttp/guzzle": "^7.2",
+<<<<<<< HEAD
         "laravel/framework": "^10.10",
         "laravel/sanctum": "^3.3",
+=======
+        "laravel/framework": "^10.0",
+        "laravel/sanctum": "^3.2",
+>>>>>>> e805ba4 (update admin)
         "laravel/tinker": "^2.8"
     },
     "require-dev": {
@@ -17,7 +27,11 @@
         "laravel/sail": "^1.18",
         "mockery/mockery": "^1.4.4",
         "nunomaduro/collision": "^7.0",
+<<<<<<< HEAD
         "phpunit/phpunit": "^10.1",
+=======
+        "phpunit/phpunit": "^10.0",
+>>>>>>> e805ba4 (update admin)
         "spatie/laravel-ignition": "^2.0"
     },
     "autoload": {
@@ -48,6 +62,12 @@
         ]
     },
     "extra": {
+<<<<<<< HEAD
+=======
+        "branch-alias": {
+            "dev-master": "10.x-dev"
+        },
+>>>>>>> e805ba4 (update admin)
         "laravel": {
             "dont-discover": []
         }
@@ -57,8 +77,12 @@
         "preferred-install": "dist",
         "sort-packages": true,
         "allow-plugins": {
+<<<<<<< HEAD
             "pestphp/pest-plugin": true,
             "php-http/discovery": true
+=======
+            "pestphp/pest-plugin": true
+>>>>>>> e805ba4 (update admin)
         }
     },
     "minimum-stability": "stable",

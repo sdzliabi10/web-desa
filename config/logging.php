@@ -3,7 +3,10 @@
 use Monolog\Handler\NullHandler;
 use Monolog\Handler\StreamHandler;
 use Monolog\Handler\SyslogUdpHandler;
+<<<<<<< HEAD
 use Monolog\Processor\PsrLogMessageProcessor;
+=======
+>>>>>>> e805ba4 (update admin)
 
 return [
 
@@ -62,7 +65,10 @@ return [
             'driver' => 'single',
             'path' => storage_path('logs/laravel.log'),
             'level' => env('LOG_LEVEL', 'debug'),
+<<<<<<< HEAD
             'replace_placeholders' => true,
+=======
+>>>>>>> e805ba4 (update admin)
         ],
 
         'daily' => [
@@ -70,7 +76,10 @@ return [
             'path' => storage_path('logs/laravel.log'),
             'level' => env('LOG_LEVEL', 'debug'),
             'days' => 14,
+<<<<<<< HEAD
             'replace_placeholders' => true,
+=======
+>>>>>>> e805ba4 (update admin)
         ],
 
         'slack' => [
@@ -79,7 +88,10 @@ return [
             'username' => 'Laravel Log',
             'emoji' => ':boom:',
             'level' => env('LOG_LEVEL', 'critical'),
+<<<<<<< HEAD
             'replace_placeholders' => true,
+=======
+>>>>>>> e805ba4 (update admin)
         ],
 
         'papertrail' => [
@@ -91,7 +103,10 @@ return [
                 'port' => env('PAPERTRAIL_PORT'),
                 'connectionString' => 'tls://'.env('PAPERTRAIL_URL').':'.env('PAPERTRAIL_PORT'),
             ],
+<<<<<<< HEAD
             'processors' => [PsrLogMessageProcessor::class],
+=======
+>>>>>>> e805ba4 (update admin)
         ],
 
         'stderr' => [
@@ -102,20 +117,29 @@ return [
             'with' => [
                 'stream' => 'php://stderr',
             ],
+<<<<<<< HEAD
             'processors' => [PsrLogMessageProcessor::class],
+=======
+>>>>>>> e805ba4 (update admin)
         ],
 
         'syslog' => [
             'driver' => 'syslog',
             'level' => env('LOG_LEVEL', 'debug'),
+<<<<<<< HEAD
             'facility' => LOG_USER,
             'replace_placeholders' => true,
+=======
+>>>>>>> e805ba4 (update admin)
         ],
 
         'errorlog' => [
             'driver' => 'errorlog',
             'level' => env('LOG_LEVEL', 'debug'),
+<<<<<<< HEAD
             'replace_placeholders' => true,
+=======
+>>>>>>> e805ba4 (update admin)
         ],
 
         'null' => [
